@@ -11,7 +11,7 @@ public class SqServlet extends HttpServlet {
 
 	public void doGet(HttpServletRequest req, HttpServletResponse res) throws IOException {
 
-		int result = (int) req.getAttribute("sum");
+		int result = Integer.parseInt(req.getParameter("k"));
 		int square = result * result;
 		PrintWriter out = res.getWriter();
 

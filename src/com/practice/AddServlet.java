@@ -17,10 +17,7 @@ public class AddServlet extends HttpServlet {
 
 		int sum = a + b;
 
-		req.setAttribute("sum", sum);
-
-		RequestDispatcher rd = req.getRequestDispatcher("sq");
-		rd.forward(req, res);
+		res.sendRedirect("sq?k="+sum);
 	}
 
 }
