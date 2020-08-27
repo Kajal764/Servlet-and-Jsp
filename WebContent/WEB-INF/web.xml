@@ -6,24 +6,23 @@
 
 	<servlet>
 		<servlet-name>abc</servlet-name>
-		<servlet-class>com.practice.AddServlet</servlet-class>
+		<servlet-class>com.practice.MyServlet</servlet-class>
 	</servlet>
 
 	<servlet-mapping>
 		<servlet-name>abc</servlet-name>
-		<url-pattern>/add</url-pattern>
+		<url-pattern>/home</url-pattern>
 	</servlet-mapping>
 
+	<context-param>
+		<param-name>name</param-name>
+		<param-value>kajal</param-value>
+	</context-param>
 
-
-	<servlet>
-		<servlet-name>square</servlet-name>
-		<servlet-class>com.practice.SqServlet</servlet-class>
-	</servlet>
-	<servlet-mapping>
-		<servlet-name>square</servlet-name>
-		<url-pattern>/sq</url-pattern>
-	</servlet-mapping>
+	<context-param>
+		<param-name>phone</param-name>
+		<param-value>Samsung</param-value>
+	</context-param>
 
 
 </web-app>
